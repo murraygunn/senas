@@ -1,7 +1,20 @@
 <?php
     $scripts = array('js/index.js');
     include('header.php');
+    $categories_file = file_get_contents('json/categorias.json');
+    $categories = json_decode($categories_file);
 ?>
 <div id="main">
-    <div id="main-wrap"></div>
+    <div id="main-wrap">
+        <?php foreach($categories->categories as $category): ?>
+            <div class="box video" data-id="<?php echo $category->name;?>">
+                <a href="aprender.php?category=<?php echo $category->name;?>">
+                    <video class="mini" id="<?php echo $category->name;?>" preload>
+                        <source src="videos/<?php echo $category->video;?>" type="video/mp4">
+                    </video>
+                    <label><?php echo $category->title; ?></label>
+                </a>
+            </div>
+        <?php endforeach; ?>
+    </div>
 </div>

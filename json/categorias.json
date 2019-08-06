@@ -1,0 +1,29 @@
+{
+    "categories": [
+        {
+            "title": "Abecedario",
+            "video": "abecedario.mp4",
+            "name": "abecedario"
+        },
+        {
+            "title": "Números",
+            "video": "numeros.mp4",
+            "name": "numeros"
+        },
+        {
+            "title": "Profesiones",
+            "video": "profesiones.mp4",
+            "name": "profesiones"
+        },
+        {
+            "title": "Frases Comúnes",
+            "video": "frases_comunes.mp4",
+            "name": "frases_comunes"
+        },
+        {
+            "title": "Alimentos",
+            "video": "alimentos.mp4",
+            "name": "alimentos"
+        }
+    ]
+}
