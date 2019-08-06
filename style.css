@@ -1,0 +1,108 @@
+body
+{
+    margin:            0;
+    background-image:        url("/bibliolabs/Background 1.png");
+}
+
+h1
+{
+    text-transform:     capitalize;
+}
+
+header
+{
+    background-color:   #5069b0;
+}
+
+#head-top
+{
+    margin:             0 auto;
+    max-width:          60em;
+}
+
+#logo img
+{
+    height:             100px;
+}
+
+#main
+{
+    overflow:           none;
+}
+
+#main-wrap, #footer-wrap
+{
+    max-width:          60em;
+    margin:             20px auto;
+    display:            flex;
+    flex-wrap:          wrap;
+    justify-content:    space-between;
+}
+
+#main .video
+{
+    
+    padding:            0 0px 10px 0;
+}
+
+#main .mini
+{
+    max-height:         240px;
+}
+
+#main .full
+{
+    max-width:          720px;
+}
+
+label
+{
+    display:            block;
+    text-transform:     capitalize;
+    text-align:         center;
+}
+
+#answers
+{
+    display:            flex;
+    flex-wrap:          wrap;
+    justify-content:    space-between;
+}
+
+#main button
+{
+    width:              120px;
+    height:             60px;
+}
+
+#results
+{
+    width:              250px;
+    height:             140px;
+    font-size:          100px;
+    background-color:   green;
+    text-align:         center;
+}
+
+#score
+{
+    height:             140px;
+}
+
+#thumb img
+{
+    max-height:         140px;
+    margin-top:         60px;
+}
+
+.nav img
+{
+    display:            block;
+    height:             100px;
+}
+
+foote
+{
+    position:           fixed;
+    bottom:             10px;
+}
