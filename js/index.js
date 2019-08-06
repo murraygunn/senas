@@ -9,7 +9,7 @@ var categories = {
 window.onload = function () {
     list = '';
     $.each(categories, function (order, category) {
-        video = '<div class="video"><a href="/bibliolabs/aprender.php?category=' + category + '"><video class="mini" controls><source src="/bibliolabs/numeros.mp4" type="video/mp4"></video><label>' + category + '</label></a></div>';
+        video = '<div class="video"><a href="aprender.php?category=' + category + '"><video class="mini" controls><source src="videos/numeros.mp4" type="video/mp4"></video><label>' + category + '</label></a></div>';
         $('#main-wrap').append(video);
     });
 }

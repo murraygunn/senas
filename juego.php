@@ -1,6 +1,6 @@
 <?php
     $category = $_GET['category'];
-    $scripts = array('juego.js', $category . '/videos.js');
+    $scripts = array('js/juego.js', $category . '/videos.js');
     include('header.php');
 ?>
         <div id="main">
@@ -8,7 +8,7 @@
                 <div id="showvideo">
                     <div class="video">
                             <video class="full" controls>
-                                <source src="/bibliolabs/rabbit.mp4" type="video/mp4">
+                                <source src="videos/rabbit.mp4" type="video/mp4">
                             </video>
                             <label id="answer">0/label>
                     </div>

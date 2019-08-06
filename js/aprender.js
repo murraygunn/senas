@@ -7,7 +7,7 @@ window.onload = function () {
     });
     
     // update second icon in footer
-    $('#second img').attr('src', 'console.svg');
+    $('#second img').attr('src', 'img/console.svg');
     $('#second label').html('juego');
     $('#second a').attr('href', 'juego.php?category=' + title);
 }

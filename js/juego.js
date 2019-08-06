@@ -16,7 +16,7 @@ window.onload = function () {
     showFive(active);
     
     // update second icon in footer
-    $('#second img').attr('src', 'giphy.webp');
+    $('#second img').attr('src', 'img/giphy.webp');
     $('#second label').html('aprender');
     $('#second a').attr('href', 'aprender.php?category=' + title);
 }
@@ -83,10 +83,10 @@ function answer(choice) {
         // increment counter and show thumbs up
         score = Number($('#score').html()) + 1;
         $('#score').html(score);
-        $('#thumb img').attr('src', 'up.svg');
+        $('#thumb img').attr('src', 'img/up.svg');
     } else {
         // show thumbs down
-        $('#thumb img').attr('src', 'down.svg');
+        $('#thumb img').attr('src', 'img/down.svg');
     }
     
     // choose next random video

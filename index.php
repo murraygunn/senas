@@ -1,8 +1,7 @@
 <?php
-    $scripts = array('index.js');
+    $scripts = array('js/index.js');
     include('header.php');
 ?>
-        <div id="main">
-            <div id="main-wrap">
-            </div>
-        </div>
+<div id="main">
+    <div id="main-wrap"></div>
+</div>
