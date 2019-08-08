@@ -2,7 +2,7 @@
             <div id="footer-wrap">
                 <div class="nav">
                     <a href="index.php">
-                        <img src="house-outline.svg" />
+                        <img src="img/house-outline.svg" />
                         <label>Inicio</label>
                     </a>
                 </div>

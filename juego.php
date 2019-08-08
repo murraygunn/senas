@@ -6,7 +6,7 @@
         <div id="main">
             <div id="main-wrap">
                 <div id="showvideo">
-                    <div class="video">
+                    <div class="box video">
                             <video class="full" controls>
                                 <source src="videos/rabbit.mp4" type="video/mp4">
                             </video>
@@ -21,7 +21,7 @@
                     </div>
                 </div>
                 <div id="results">
-                    <div id="score"></div>
+                    <div id="score">0</div>
                     <div id="thumb"><img src="" /></div>
                 </div>
             </div>

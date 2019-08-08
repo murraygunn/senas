@@ -83,6 +83,8 @@ label {
 
 .video {
     margin: 100px 30px;
+    height: 362px;
+    width:  640px;
 }
 
 .video label {
@@ -100,6 +102,12 @@ Box
     background-color: #DDFFF7;
     position: relative;
     box-shadow: 10px 10px 42px 0 rgba(0,0,0,0.75);
+}
+
+#showvideo .box
+{
+    width:  640px;
+    height: 352px;
 }
 
 .box:after, .box:before{
@@ -145,6 +153,5 @@ Box
 }*/
 
 footer {
-    position: fixed;
     bottom: 10px;
 }
