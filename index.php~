@@ -12,7 +12,7 @@
                     <video class="mini" id="<?php echo $category->name;?>" preload>
                         <source src="videos/<?php echo $category->video;?>" type="video/mp4">
                     </video>
-                    <label><img src="img/<?php echo $category->name; ?>.svg" /><?php echo $category->title; ?></label>
+                    <label><img src="<?php echo $category->name; ?>.svg" /><?php echo $category->title; ?></label>
                 </a>
             </div>
         <?php endforeach; ?>
