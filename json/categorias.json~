@@ -11,19 +11,24 @@
             "name": "numeros"
         },
         {
-            "title": "Profesiones",
-            "video": "profesiones.mp4",
-            "name": "profesiones"
+            "title": "Colores",
+            "video": "colores.mp4",
+            "name": "colores"
         },
         {
-            "title": "Frases Comúnes",
-            "video": "frases_comunes.mp4",
-            "name": "frases_comunes"
+            "title": "Familia",
+            "video": "familia.mp4",
+            "name": "familia"
         },
         {
-            "title": "Alimentos",
-            "video": "alimentos.mp4",
-            "name": "alimentos"
+            "title": "Saludos y Cortesias",
+            "video": "saludos.mp4",
+            "name": "saludos"
+        },
+        {
+            "title": "Varios",
+            "video": "varios.mp4",
+            "name": "varios"
         }
     ]
 }

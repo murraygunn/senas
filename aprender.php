@@ -8,11 +8,6 @@
                 <div id="videolist">
                     <h1></h1>
                     <ul></ul>
-<?php
-    foreach($items as $details) {
-        echo '<ul><li onclick="play(' . "'" . $details[1] . "'" . ')">' . $details[0] . '</li></ul>';
-    }
-?>
                 </div>
                 <div id="showvideo">
                     <div class="box video">

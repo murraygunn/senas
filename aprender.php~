@@ -9,7 +9,6 @@
                     <h1></h1>
                     <ul></ul>
 <?php
-print_r($category);
     foreach($items as $details) {
         echo '<ul><li onclick="play(' . "'" . $details[1] . "'" . ')">' . $details[0] . '</li></ul>';
     }
