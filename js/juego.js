@@ -10,7 +10,6 @@ window.onload = function () {
     active = randomVideo('');
     console.log(active + videos[active]);
     play(videos[active]);
-    $('#answer').html(active);
     
     // show random buttons
     showFive(active);
@@ -84,9 +83,13 @@ function answer(choice) {
         score = Number($('#score').html()) + 1;
         $('#score').html(score);
         $('#thumb img').attr('src', 'img/up.svg');
+        var audio = new Audio('sonidos/ganar.mp3');
+        audio.play();
     } else {
         // show thumbs down
         $('#thumb img').attr('src', 'img/down.svg');
+        var audio = new Audio('sonidos/pierde.mp3');
+        audio.play();
     }
     
     // choose next random video
@@ -94,9 +97,10 @@ function answer(choice) {
     active = randomVideo(active);
     console.log(active + videos[active]);
     play(videos[active]);
-    $('#answer').html(active);
     
     // show random buttons
     showFive(active);
 
+    $('.choice').attr('disabled', true);
+    setTimeout(function () {$('.choice').attr('disabled', false)}, 5000);
 }

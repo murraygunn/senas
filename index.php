@@ -9,7 +9,7 @@
         <?php foreach($categories->categories as $category): ?>
             <div class="box video" data-id="<?php echo $category->name;?>">
                 <a href="aprender.php?category=<?php echo $category->name;?>">
-                    <video class="mini" id="<?php echo $category->name;?>" preload>
+                    <video class="mini" id="<?php echo $category->name;?>" preload muted>
                         <source src="videos/<?php echo $category->video;?>" type="video/mp4">
                     </video>
                     <label><img src="img/<?php echo $category->name; ?>.svg" /><?php echo $category->title; ?></label>
@@ -18,3 +18,4 @@
         <?php endforeach; ?>
     </div>
 </div>
+<?php include ('footer.php'); ?>

@@ -8,7 +8,7 @@
     <meta http-equiv="Content-Type" content="text/html;" />
     <meta name="author" content="mag" />
     <meta name="DC.date" scheme="W3CDTF" content="2019-07-">
-    <title>Biblolabs Lengua de Seña</title>
+    <title>Biblolabs Lengua de Señas</title>
     <link rel="stylesheet" media="screen" type="text/css" href="styles/style.css" />
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script src="js/functions.js" language="javascript" type="text/javascript"></script>
@@ -26,6 +26,8 @@
                         <img src="img/logo.png" />
                     </div>
                     <div id="nav">
+                        <h1>Diccionario de Señas</h1>
+                        <h2>Aprende lengua de señas colombiana</h2>
                     </div>
                 </div>
             </div>

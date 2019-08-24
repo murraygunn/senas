@@ -8,11 +8,11 @@
     <div id="main-wrap">
         <?php foreach($categories->categories as $category): ?>
             <div class="box video" data-id="<?php echo $category->name;?>">
-                <a href="aprender.php?category=<?php echo $category->name;?>">
+                <a href="aprender.php?category=<?php echo $category->name;?>/">
                     <video class="mini" id="<?php echo $category->name;?>" preload>
                         <source src="videos/<?php echo $category->video;?>" type="video/mp4">
                     </video>
-                    <label><img src="<?php echo $category->name; ?>.svg" /><?php echo $category->title; ?></label>
+                    <label><img src="img/<?php echo $category->name; ?>.svg" /><?php echo $category->title; ?></label>
                 </a>
             </div>
         <?php endforeach; ?>
