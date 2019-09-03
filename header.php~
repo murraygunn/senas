@@ -1,8 +1,6 @@
 <?php
     $page = basename($_SERVER['PHP_SELF']);
     $path = $_SERVER['DOCUMENT_ROOT'];
-    echo $page;
-    echo $path;
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
@@ -10,7 +8,7 @@
     <meta http-equiv="Content-Type" content="text/html;" />
     <meta name="author" content="mag" />
     <meta name="DC.date" scheme="W3CDTF" content="2019-07-">
-    <title>Biblolabs Lengua de Seña</title>
+    <title>Biblolabs Lengua de Señas</title>
     <link rel="stylesheet" media="screen" type="text/css" href="styles/style.css" />
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script src="js/functions.js" language="javascript" type="text/javascript"></script>
@@ -28,6 +26,9 @@
                         <img src="img/logo.png" />
                     </div>
                     <div id="nav">
+                        <a href="index.php"><img id="thrones" src="https://fontmeme.com/permalink/190902/6cd2e363e142700cb3159a8e1b2c6d14.png" />
+                        <!--h1>Juego de Señas</h1>-->
+                        <h2>#Bibliolabs</h2></a>
                     </div>
                 </div>
             </div>

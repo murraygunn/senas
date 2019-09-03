@@ -1,12 +1,8 @@
 body {
     margin: 0;
-    background-image: url("../img/Background definitivo.png");
+    background-image: url("../img/Backgroundlow.png");
     background-size: cove;
     font-family: Helvetica, Arial, sans-serif;
-}
-
-h1 {
-    text-transform: capitalize;
 }
 
 a,
@@ -17,10 +13,16 @@ a:active {
     text-decoration: none;
     color: #5069b0;
     font-weight: bold;
+    cursor: pointer;
 }
 
 header {
     background-color: #5069b0;
+}
+
+#thrones {
+    height: 30px;
+    padding: 20px 0 10px 0;
 }
 
 #head-top {
@@ -43,6 +45,7 @@ header {
     font-size: 150%;
     font-weight: 600;
     margin: 0px;
+    text-align: right;
 }
 
 #logo img {
@@ -74,6 +77,7 @@ header {
 
 #footer-wrap img {
     height: 150px;
+    margin-right: -60px;
 }
 
 #main .full {
@@ -108,12 +112,15 @@ label img {
     width: 250px;
     height: 140px;
     font-size: 100px;
-    background-color: green;
     text-align: center;
 }
 
 #score {
-    height: 140px;
+    height: 170px;
+    background-image: url('../img/estrella.png');
+    background-size: 100%;
+    padding-top: 70px;
+    color: #5069b0;
 }
 
 #thumb img {
@@ -143,6 +150,8 @@ label img {
 
 #videolist ul {
     font-size: 1.4em;
+    list-style: none;
+    cursor: pointer;
 }
 
 .bold {
@@ -153,6 +162,9 @@ label img {
   -webkit-column-count: 2;
      -moz-column-count: 2;
           column-count: 2;
+  -webkit-column-width: 200px;
+     -moz-column-width: 200px;
+          column-width: 200px;
 }
 
 /*

@@ -23,12 +23,12 @@
             <div id="header-wrap">
                 <div id="head-top">
                     <div id="logo">
-                        <img src="img/logo.png" />
+                        <a href="https://bibliotecasmedellin.gov.co/cms/"><img src="img/logo.png" /></a>
                     </div>
                     <div id="nav">
-                        <img id="thrones" src="https://fontmeme.com/permalink/190902/6cd2e363e142700cb3159a8e1b2c6d14.png" />
+                        <a href="index.php"><img id="thrones" src="https://fontmeme.com/permalink/190902/6cd2e363e142700cb3159a8e1b2c6d14.png" />
                         <!--h1>Juego de Señas</h1>-->
-                        <h2>#Bibliolabs</h2>
+                        <h2>#Bibliolabs</h2></a>
                     </div>
                 </div>
             </div>
