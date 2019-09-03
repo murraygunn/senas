@@ -3,18 +3,22 @@ window.onload = function () {
     
     // show list of videos
     $.each(videos, function (videoName, videoFile) {
+        if (Object.keys(videos).length > 15) {
+            $('#videolist ul').addClass('columns');
+        }
         $('#videolist ul').append('<li id="' + videoName + '" class="list" onclick="play(\'' + videoName + '\')">' + videoName + '</li>'); // add to list
         if ($('#showvideo video')[0].src == '') { // set first video by default
-            var video = $('#showvideo video')[0];
+            play(videoName);
+/*            var video = $('#showvideo video')[0];
             video.src = carpeta + '/' + videoFile;
-            video.load();            
+            video.load();    */         
         }
     });
     
     // update second icon in footer
-    $('#second img').attr('src', 'img/console.svg');
+    $('#second img').attr('src', 'img/jugar.png');
     $('#second label').html('juego');
-    $('#second a').attr('href', 'juego.php?category=' + title);
+    $('#second a').attr('href', 'juego.php?category=' + carpeta);
 }
 
 function play (videoName) {
@@ -27,4 +31,7 @@ function play (videoName) {
     // highlight selection
     $('.list').removeClass('bold'); // remove existing bold lines
     $('#' + videoName).addClass("bold"); // make active line bold
+    
+    // label video
+    $('#showvideo label').html(videoName);
 }

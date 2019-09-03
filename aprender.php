@@ -11,23 +11,14 @@
                 </div>
                 <div id="showvideo">
                     <div class="box video">
-                            <video class="full" controls muted>
+                            <video class="full" controls muted loop>
                                 <source src="" type="video/mp4">
                             </video>
                     </div>
+                    <label></label>
                 </div>
-                <div class="nav">
-                    <a href="index.php">
-                        <img src="img/house-outline.svg" />
-                        <label>Inicio</label>
-                    </a>
-                </div>
-                <div class="nav" id="second">
-                    <a href="">
-                        <img src="" />
-                        <label></label>
-                    </a>
-                </div>
+                <div class="break"></div> <!-- break -->
+                <?php include 'menu.php'; ?>
             </div>
         </div>
 <?php include('footer.php'); ?>

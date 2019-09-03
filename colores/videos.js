@@ -1,4 +1,4 @@
-var title  = 'colores';
+var title  = 'Colores';
 var carpeta = 'colores';
 
 var videos = {

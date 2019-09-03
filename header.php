@@ -26,8 +26,9 @@
                         <img src="img/logo.png" />
                     </div>
                     <div id="nav">
-                        <h1>Diccionario de Señas</h1>
-                        <h2>Aprende lengua de señas colombiana</h2>
+                        <img id="thrones" src="https://fontmeme.com/permalink/190902/6cd2e363e142700cb3159a8e1b2c6d14.png" />
+                        <!--h1>Juego de Señas</h1>-->
+                        <h2>#Bibliolabs</h2>
                     </div>
                 </div>
             </div>

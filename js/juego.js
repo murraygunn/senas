@@ -1,5 +1,7 @@
 videolist = [];
+correctlist = [];
 active    = '';
+error     = 0;
 
 window.onload = function () {
     $('#videolist h1').html(title); // set title
@@ -15,12 +17,13 @@ window.onload = function () {
     showFive(active);
     
     // update second icon in footer
-    $('#second img').attr('src', 'img/giphy.webp');
+    $('#second img').attr('src', 'img/aprender.png');
     $('#second label').html('aprender');
-    $('#second a').attr('href', 'aprender.php?category=' + title);
+    $('#second a').attr('href', 'aprender.php?category=' + carpeta);
 }
 
 function createList () {
+    videolist = [];
     $.each(videos, function (name, file) {
         videolist.push(name);
     });    
@@ -28,7 +31,7 @@ function createList () {
 
 function play (videoFile) {
     var video = $('#showvideo video')[0];
-    video.src = title + '/' + videoFile;
+    video.src = carpeta + '/' + videoFile;
     video.load();
 }
 
@@ -43,14 +46,14 @@ function randomVideo (current) {
 }
 
 function showFive (active) {
-    templist = videolist; // make a copy so we can modify it
+    templist = $.extend([], videolist) // make a copy so we can modify it
     five = []; // array to keep our chosen values
     templist = remove(templist, active);
     var i;
     for(i = 0; (i < 4) && (templist.length > 0); i++) { // get 4 more values
-        random = Math.floor(Math.random()*$(templist).length);
-        five.push(videolist[random]);
-        templist = remove(templist, videolist[random]);
+        random = Math.floor(Math.random()*templist.length);
+        five.push(templist[random]);
+        templist = remove(templist, templist[random]);
     }
     // add correct answer to random position
     pos = Math.floor(Math.random()*(five.length+1));
@@ -82,14 +85,24 @@ function answer(choice) {
         // increment counter and show thumbs up
         score = Number($('#score').html()) + 1;
         $('#score').html(score);
-        $('#thumb img').attr('src', 'img/up.svg');
+        $('#thumb img').attr('src', 'img/ganar.png');
         var audio = new Audio('sonidos/ganar.mp3');
         audio.play();
     } else {
         // show thumbs down
-        $('#thumb img').attr('src', 'img/down.svg');
+        $('#thumb img').attr('src', 'img/perder.png');
         var audio = new Audio('sonidos/pierde.mp3');
         audio.play();
+        
+        // three strikes and you're out
+        error += 1;
+        if (error == 3) {
+            setTimeout(function () {
+                error = 0;
+                $('#score').html(0);
+                $('thumb img').attr('src', '');
+            }, 2000);
+        }
     }
     
     // choose next random video

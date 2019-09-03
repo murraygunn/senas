@@ -1,4 +1,4 @@
-var title  = 'varios';
+var title  = 'Varios';
 var carpeta = 'varios';
 
 var videos = {
@@ -10,7 +10,7 @@ var videos = {
     'Deportes'         : 'Deportes.mp4',
     'Desayuno'         : 'Desayuno.mp4',
     'Fútbol'           : 'Fútbol.mp4',
-    'Identidad_género' : 'Identidad_género.mp4',
+    'Identidad Género' : 'Identidad_género.mp4',
     'Metro'            : 'Metro.mp4',
     'Natación'         : 'Natación.mp4',
     'Sexualidad'       : 'Sexualidad.mp4',

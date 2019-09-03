@@ -23,8 +23,7 @@
                     <div id="score">0</div>
                     <div id="thumb"><img src="" /></div>
                 </div>
-            </div>
-        </div>
+                <div class="break"></div> <!-- break -->
                 <div class="nav">
                     <a href="index.php">
                         <img src="img/house-outline.svg" />
@@ -37,4 +36,6 @@
                         <label></label>
                     </a>
                 </div>
+            </div>
+        </div>
 <?php include('footer.php'); ?>

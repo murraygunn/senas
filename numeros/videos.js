@@ -1,4 +1,4 @@
-var title  = 'numeros';
+var title  = 'Números';
 var carpeta = 'numeros';
 
 var videos = {
