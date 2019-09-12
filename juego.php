@@ -24,18 +24,12 @@
                     <div id="thumb"><img src="" /></div>
                 </div>
                 <div class="break"></div> <!-- break -->
-                <div class="nav">
-                    <a href="index.php">
-                        <img src="img/house-outline.svg" />
-                        <label>Inicio</label>
-                    </a>
-                </div>
-                <div class="nav" id="second">
-                    <a href="">
-                        <img src="" />
-                        <label></label>
-                    </a>
-                </div>
+                <?php include 'menu.php'; ?>
+            </div>
+        </div>
+        <div id="winner">
+            <div id="winner-wrap">
+                <img src="img/trophy.png" />
             </div>
         </div>
 <?php include('footer.php'); ?>

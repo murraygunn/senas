@@ -6,12 +6,10 @@ window.onload = function () {
         if (Object.keys(videos).length > 15) {
             $('#videolist ul').addClass('columns');
         }
-        $('#videolist ul').append('<li id="' + videoName + '" class="list" onclick="play(\'' + videoName + '\')">' + videoName + '</li>'); // add to list
+        id = videoName.replace(/\s/g, '');
+        $('#videolist ul').append('<li id="' + id + '" class="list" onclick="play(\'' + videoName + '\')">' + videoName + '</li>'); // add to list
         if ($('#showvideo video')[0].src == '') { // set first video by default
             play(videoName);
-/*            var video = $('#showvideo video')[0];
-            video.src = carpeta + '/' + videoFile;
-            video.load();    */         
         }
     });
     
@@ -29,8 +27,9 @@ function play (videoName) {
     video.play();
     
     // highlight selection
+    id = videoName.replace(/\s/g, '');
     $('.list').removeClass('bold'); // remove existing bold lines
-    $('#' + videoName).addClass("bold"); // make active line bold
+    $('#' + id).addClass("bold"); // make active line bold
     
     // label video
     $('#showvideo label').html(videoName);

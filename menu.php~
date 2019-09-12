@@ -20,7 +20,7 @@
     error_log(print_r($category, true)); ?>
                 <div class="nav">
                     <a href='<?php echo "$filename?category={$category->name}"; ?>'>
-                        <img src="img/<?php echo $category->name; ?>.png" />
+                        <img src="img/<?php echo $category->name; ?>.svg" />
                         <label><?php echo $category->title; ?></label>
                     </a>
                 </div>

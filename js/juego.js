@@ -52,7 +52,6 @@ function showFive (current) {
     }
     // add correct answer to random position
     pos = Math.floor(Math.random()*(five.length+1));
-    console.log(pos);
     five.splice(pos, 0, videolist[current]);
     
     // show choices
@@ -80,7 +79,7 @@ function answer(choice) {
         score = Number($('#score').html()) + 1;
         $('#score').html(score);
         $('#thumb img').attr('src', 'img/ganar.png');
-        var audio = new Audio('sonidos/ganar.mp3');
+        var audio = new Audio('sonidos/winner.mp3');
         audio.play();
         
         // add correct answer to list
@@ -88,21 +87,27 @@ function answer(choice) {
         
         // win when list is finished
         if(current+1 == videolist.length) {
-            // go to next category
-            $.getJSON('json/categorias.json', function(data) {
-                categories = data.categories;
-                $.each(categories, function (key, details) {
-                    if (details.name == carpeta) { // this category
-                        if (key++ > categories.length) {
-                            // no categories left -> do nothing for now
-                        } else {
-                            setTimeout(function () {
+            $('#winner').show();
+            setTimeout(function () {
+                $('#winner').hide();
+                // go to next category
+                $.getJSON('json/categorias.json', function(data) {
+                    categories = data.categories;
+    
+    console.log('categories ' + categories.length);
+                    $.each(categories, function (key, details) {
+                        console.log(key);
+                        if (details.name == carpeta) { // this category
+                            key++;
+                            if (key == categories.length) { // no categories left - return to category list
+                                window.location.replace ('index.php');
+                            } else {
                                 window.location.replace ('juego.php?category=' + categories[key].name);
-                            });
+                            }
                         }
-                    }
+                    });
                 });
-            });
+            }, 5000);
         }
     } else {
         // show thumbs down

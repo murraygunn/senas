@@ -1,8 +1,9 @@
 body {
     margin: 0;
-    background-image: url("../img/Backgroundlow.png");
+//    background-image: url("../img/Backgroundlow.png");
+    background-color: white;
     background-size: cove;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, sans-serif;
 }
 
 a,
@@ -17,7 +18,8 @@ a:active {
 }
 
 header {
-    background-color: #5069b0;
+    background-color: #00ccbe;
+  box-shadow: 0px 10px 5px grey;
 }
 
 #thrones {
@@ -32,12 +34,33 @@ header {
     justify-content: space-between;
 }
 
+#h1 {
+    height: 42px;
+    text-align: right;
+    margin-top: 20px;
+    float:right;
+}
+
+#h2 {
+    display: block;
+    height: 36px;
+    text-align: right;
+    float: right;
+    clear: right;
+}
+
 #nav h1 {
     color: white;
-    font-size: 250%;
-    font-weight: 700;
+    font-size: 200%;
+    font-weight: 600;
     margin: 20px 0 0 0;
     text-align: right;
+    text-transform: uppercase;
+    -webkit-transform:scale(1,1.5); /* Safari and Chrome */
+    -moz-transform:scale(1,1.5); /* Firefox */
+    -ms-transform:scale(1,2); /* IE 9 */
+    -o-transform:scale(1,2); /* Opera */
+    transform:scale(1,2); /* W3C */
 }
 
 #nav h2 {
@@ -91,6 +114,14 @@ label {
     margin-top: 30px;
     font-size:  30px;
     cursor: pointer;
+}
+
+label:hover {
+    font-size: 2.2em;
+}
+
+li:hover {
+    font-weight: bold;
 }
 
 label img {
@@ -166,6 +197,20 @@ label img {
   -webkit-column-width: 200px;
      -moz-column-width: 200px;
           column-width: 200px;
+}
+
+#winner {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+//    background-color: #AA4465;
+    padding: 20px 50px;
+    display: none;
+}
+
+#winner img {
+    height: 800px;
 }
 
 /*
